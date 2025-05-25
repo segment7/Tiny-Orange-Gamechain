@@ -1,0 +1,97 @@
+[05-25|13:30:33.579] INFO cmd/root.go:137 -----------
+[05-25|13:30:33.579] INFO cmd/root.go:138 cmd: completion bash
+[05-25|13:30:33.680] WARN cmd/root.go:189 failed to read last-actions file! This is non-critical but is logged {"error": "open /home/segment7/.avalanche-cli/.last_actions.json: no such file or directory"}
+[05-25|13:34:44.165] INFO cmd/root.go:137 -----------
+[05-25|13:34:44.166] INFO cmd/root.go:138 cmd: blockchain create segchain
+[05-25|13:35:15.911] INFO ux/output.go:43 [92m✓[0m Validator Manager Contract owner address 0xF555e2A1a3fd313b44fc1CB018b7aFFad61B6024
+
+[05-25|13:36:08.828] INFO ux/output.go:43 prefunding address 0x8Eba0021c60931EADED540b32bd8bB96D0E9d335 with balance 1000000000000000000000000
+
+[05-25|13:37:32.127] INFO ux/output.go:43 Error: EOF
+
+[05-25|13:38:11.103] INFO cmd/root.go:137 -----------
+[05-25|13:38:11.103] INFO cmd/root.go:138 cmd: blockchain create segchain
+[05-25|13:38:37.582] INFO ux/output.go:43 [92m✓[0m Validator Manager Contract owner address 0x8Eba0021c60931EADED540b32bd8bB96D0E9d335
+
+[05-25|13:38:45.407] INFO ux/output.go:43 prefunding address 0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC with balance 1000000000000000000000000
+
+[05-25|13:38:45.410] INFO binutils/release.go:98 Using binary version {"version": "v0.7.3"}
+[05-25|13:38:45.411] INFO ux/output.go:43 Installing subnet-evm-v0.7.3...
+
+[05-25|13:38:49.955] INFO ux/output.go:43 subnet-evm-v0.7.3 installation successful
+
+[05-25|13:38:50.032] INFO ux/output.go:43 File /home/segment7/.avalanche-cli/subnets/segchain/chain.json successfully written
+
+[05-25|13:38:50.572] INFO ux/output.go:43 [92m✓[0m Successfully created blockchain configuration
+
+[05-25|13:38:50.572] INFO ux/output.go:43 Run 'avalanche blockchain describe' to view all created addresses and what their roles are
+
+[05-25|13:39:15.221] INFO cmd/root.go:137 -----------
+[05-25|13:39:15.221] INFO cmd/root.go:138 cmd: blockchain describe segchain
+[05-25|13:39:15.322] INFO ux/output.go:43 +------------------------------------------------------------------+
+|                             SEGCHAIN                             |
++------------+-----------------------------------------------------+
+| Name       | segchain                                            |
++------------+-----------------------------------------------------+
+| VM ID      | spe3fMFzDYhKyRdhBXFHs6bGAqCA4R95aLh6QrYnnNu81N8rw   |
++------------+-----------------------------------------------------+
+| VM Version | v0.7.3                                              |
++------------+-----------------------------------------------------+
+| Validation | Proof Of Authority                                  |
++------------+-----------------------------------------------------+
+
+[05-25|13:39:15.322] INFO ux/output.go:43 
+
+[05-25|13:39:15.322] INFO ux/output.go:43 +--------------------------+
+|           TOKEN          |
++--------------+-----------+
+| Token Name   | SEG Token |
++--------------+-----------+
+| Token Symbol | SEG       |
++--------------+-----------+
+
+[05-25|13:39:15.335] INFO ux/output.go:43 
+
+[05-25|13:39:15.336] INFO ux/output.go:43 +---------------------------------------------------------------------------------------------------------------------------------------+
+|                                                        INITIAL TOKEN ALLOCATION                                                       |
++-------------------------+------------------------------------------------------------------+--------------+---------------------------+
+| DESCRIPTION             | ADDRESS AND PRIVATE KEY                                          | AMOUNT (SEG) | AMOUNT (WEI)              |
++-------------------------+------------------------------------------------------------------+--------------+---------------------------+
+| [0;33mMain funded account[0;0m     | 0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC                       | 1000000      | 1000000000000000000000000 |
+| ewoq                    | 56289e99c94b6912bfc12adc093c9b51124f0dc54ac7a766b2bc5ccf558d8027 |              |                           |
++-------------------------+------------------------------------------------------------------+--------------+---------------------------+
+| [0;33mMain funded account[0;0m     | 0x8Eba0021c60931EADED540b32bd8bB96D0E9d335                       | 10           | 10000000000000000000      |
+| subnet_segchain_airdrop | bc3f47156f5493456031e700ae713d7882a306dcff3fc9ad902ee080db73e400 |              |                           |
++-------------------------+------------------------------------------------------------------+--------------+---------------------------+
+| [0;33mUsed by ICM[0;0m             | 0xF555e2A1a3fd313b44fc1CB018b7aFFad61B6024                       | 600          | 600000000000000000000     |
+| cli-teleporter-deployer | 9fb61886a6119f269831729eceb26b5e3001aba81e993eb753b194bceaf1bdfe |              |                           |
++-------------------------+------------------------------------------------------------------+--------------+---------------------------+
+
+[05-25|13:39:15.336] INFO ux/output.go:43 
+
+[05-25|13:39:15.336] INFO ux/output.go:43 +----------------------------------------------------------------------------------------------------------------------------------+
+|                                                          SMART CONTRACTS                                                         |
++----------------------------------------+--------------------------------------------+--------------------------------------------+
+| DESCRIPTION                            | ADDRESS                                    | DEPLOYER                                   |
++----------------------------------------+--------------------------------------------+--------------------------------------------+
+| Validator Messages Lib                 | 0x9C00629cE712B0255b17A4a657171Acd15720B8C |                                            |
++----------------------------------------+--------------------------------------------+--------------------------------------------+
+| Proxy Admin                            | 0xC0fFEE1234567890aBCdeF1234567890abcDef34 | 0x8Eba0021c60931EADED540b32bd8bB96D0E9d335 |
++----------------------------------------+--------------------------------------------+--------------------------------------------+
+| ACP99 Compatible PoA Validator Manager | 0x0C0DEbA5E0000000000000000000000000000000 |                                            |
++----------------------------------------+--------------------------------------------+--------------------------------------------+
+| Transparent Proxy                      | 0x0Feedc0de0000000000000000000000000000000 |                                            |
++----------------------------------------+--------------------------------------------+--------------------------------------------+
+
+[05-25|13:39:15.337] INFO ux/output.go:43 
+
+[05-25|13:39:15.337] INFO ux/output.go:43 +----------------------------------------------------------------------+
+|                      INITIAL PRECOMPILE CONFIGS                      |
++------------+-----------------+-------------------+-------------------+
+| PRECOMPILE | ADMIN ADDRESSES | MANAGER ADDRESSES | ENABLED ADDRESSES |
++------------+-----------------+-------------------+-------------------+
+| Warp       | n/a             | n/a               | n/a               |
++------------+-----------------+-------------------+-------------------+
+
+[05-25|14:46:22.978] INFO cmd/root.go:137 -----------
+[05-25|14:46:22.979] INFO cmd/root.go:138 cmd: contract
